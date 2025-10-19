@@ -1,5 +1,43 @@
-pip
-autopep8
-Flask==3.0.3
-gunicorn==22.0.0
-Werkzeug==3.0.6
+# AirTrans Requirements
+# High-performance file transfer system
+
+# Web Framework
+flask==3.0.0
+flask-cors==4.0.0
+
+# Async I/O
+aiofiles==23.2.1
+
+# Binary serialization (faster than JSON)
+msgpack==1.0.7
+
+# Compression (ultra-fast)
+lz4==4.3.2
+
+# QR Code generation
+qrcode[pil]==7.4.2
+pillow==10.1.0
+
+# QR Code scanning (optional)
+pyzbar==0.1.9
+
+# Performance monitoring
+psutil==5.9.6
+
+# Progress bars
+tqdm==4.66.1
+
+# Networking utilities
+
+# Optional: Even faster event loop
+uvloop==0.19.0; sys_platform != 'win32'
+
+# Optional: Production WSGI server
+gunicorn==21.2.0; sys_platform != 'win32'
+waitress==2.1.2; sys_platform == 'win32'
+
+# Development tools
+pytest==7.4.3
+pytest-asyncio==0.21.1
+black==23.12.1
+flake8==6.1.0
